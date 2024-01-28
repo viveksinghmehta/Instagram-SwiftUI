@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E95A4CF2B66189D00B0E911 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2E95A4CE2B66189D00B0E911 /* SDWebImageSwiftUI */; };
+		2E95A4D12B661A0B00B0E911 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95A4D02B661A0B00B0E911 /* ProfileImageView.swift */; };
+		2E95A4D32B66410A00B0E911 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95A4D22B66410A00B0E911 /* FeedView.swift */; };
+		2E95A4D52B66411300B0E911 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95A4D42B66411300B0E911 /* FeedCell.swift */; };
 		2EC8B9982B6545C700C3F98B /* InstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B9972B6545C700C3F98B /* InstagramApp.swift */; };
 		2EC8B99A2B6545C700C3F98B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B9992B6545C700C3F98B /* ContentView.swift */; };
 		2EC8B99C2B6545C800C3F98B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC8B99B2B6545C800C3F98B /* Assets.xcassets */; };
@@ -19,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E95A4D02B661A0B00B0E911 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		2E95A4D22B66410A00B0E911 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		2E95A4D42B66411300B0E911 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		2EC8B9942B6545C700C3F98B /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC8B9972B6545C700C3F98B /* InstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramApp.swift; sourceTree = "<group>"; };
 		2EC8B9992B6545C700C3F98B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E95A4CF2B66189D00B0E911 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +145,8 @@
 		2EC8B9AC2B65480B00C3F98B /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				2E95A4D22B66410A00B0E911 /* FeedView.swift */,
+				2E95A4D42B66411300B0E911 /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -182,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				2EC8B9B72B65567D00C3F98B /* UserStatView.swift */,
+				2E95A4D02B661A0B00B0E911 /* ProfileImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -202,6 +213,9 @@
 			dependencies = (
 			);
 			name = Instagram;
+			packageProductDependencies = (
+				2E95A4CE2B66189D00B0E911 /* SDWebImageSwiftUI */,
+			);
 			productName = Instagram;
 			productReference = 2EC8B9942B6545C700C3F98B /* Instagram.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +244,9 @@
 				Base,
 			);
 			mainGroup = 2EC8B98B2B6545C700C3F98B;
+			packageReferences = (
+				2E95A4CD2B66189D00B0E911 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 2EC8B9952B6545C700C3F98B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -256,6 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E95A4D12B661A0B00B0E911 /* ProfileImageView.swift in Sources */,
+				2E95A4D52B66411300B0E911 /* FeedCell.swift in Sources */,
+				2E95A4D32B66410A00B0E911 /* FeedView.swift in Sources */,
 				2EC8B9B52B654A0C00C3F98B /* ProfileView.swift in Sources */,
 				2EC8B9BC2B65879500C3F98B /* StringExtension.swift in Sources */,
 				2EC8B9BA2B65872400C3F98B /* AppConstants.swift in Sources */,
@@ -480,6 +500,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E95A4CD2B66189D00B0E911 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E95A4CE2B66189D00B0E911 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E95A4CD2B66189D00B0E911 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2EC8B98C2B6545C700C3F98B /* Project object */;
 }

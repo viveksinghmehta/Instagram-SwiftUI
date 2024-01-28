@@ -7,8 +7,4 @@
 
 import Foundation
 
-class ImageUrl {
-    class func getFullImageUrl(number: Int) -> String {
-        return AppConstants.imageUrl + number.description + AppConstants.imageExtension
-    }
-}
+
