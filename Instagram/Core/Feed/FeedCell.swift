@@ -51,7 +51,7 @@ struct FeedCell: View {
             HStack {
                 HStack(spacing: 12) {
                     Button(action: {}) {
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "heart")
                             .resizable()
                             .scaledToFit()
                     }
