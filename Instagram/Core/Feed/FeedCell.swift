@@ -14,8 +14,9 @@ struct FeedCell: View {
             
             // Profile image and username
             HStack(spacing: 10) {
-                WebImage(url: URL(string: ImageUrl.getRandomImage()))
+                WebImage(url: URL(string: ImageUrl.getRandomAvatar()))
                     .resizable()
+                    .indicator(.activity)
                     .scaledToFit()
                     .frame(width: 32, height: 32)
                     .background(.indigo)
