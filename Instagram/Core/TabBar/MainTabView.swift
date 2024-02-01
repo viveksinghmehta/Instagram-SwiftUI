@@ -16,7 +16,7 @@ struct MainTabView: View {
                 .tabItem { Image(systemName: "magnifyingglass") }
             Text("Upload Post")
                 .tabItem { Image(systemName: "plus.app") }
-            Text("Notification")
+            NotificationView()
                 .tabItem { Image(systemName: "bell.fill") }
             ProfileView()
                 .tabItem { Image(systemName: "person.crop.circle.fill") }
