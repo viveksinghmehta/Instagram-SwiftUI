@@ -38,7 +38,7 @@ struct NotificationView: View {
                 colors: [
                     curColor.opacity(0.5),
                     curColor.opacity(0.2),
-                    curColor.opacity(0.05),
+                    curColor.opacity(0.01),
                 ]
             ),
             startPoint: .top,

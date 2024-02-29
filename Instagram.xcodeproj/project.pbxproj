@@ -22,6 +22,8 @@
 		2EC8B9B82B65567D00C3F98B /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B9B72B65567D00C3F98B /* UserStatView.swift */; };
 		2EC8B9BA2B65872400C3F98B /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B9B92B65872400C3F98B /* AppConstants.swift */; };
 		2EC8B9BC2B65879500C3F98B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B9BB2B65879500C3F98B /* StringExtension.swift */; };
+		2ED853E42B8F4F2A00C5EECA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED853E32B8F4F2A00C5EECA /* LoginView.swift */; };
+		2ED853E62B8F5A8A00C5EECA /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED853E52B8F5A8A00C5EECA /* AddEmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		2EC8B9B72B65567D00C3F98B /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		2EC8B9B92B65872400C3F98B /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		2EC8B9BB2B65879500C3F98B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2ED853E32B8F4F2A00C5EECA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2ED853E52B8F5A8A00C5EECA /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 		2EC8B9AB2B6547FC00C3F98B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				2ED853E32B8F4F2A00C5EECA /* LoginView.swift */,
+				2ED853E52B8F5A8A00C5EECA /* AddEmailView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				2E95A4D12B661A0B00B0E911 /* ProfileImageView.swift in Sources */,
 				2E95A4D52B66411300B0E911 /* FeedCell.swift in Sources */,
 				2E95A4D32B66410A00B0E911 /* FeedView.swift in Sources */,
+				2ED853E62B8F5A8A00C5EECA /* AddEmailView.swift in Sources */,
 				2EC8B9B52B654A0C00C3F98B /* ProfileView.swift in Sources */,
 				2EC8B9BC2B65879500C3F98B /* StringExtension.swift in Sources */,
 				2EC8B9BA2B65872400C3F98B /* AppConstants.swift in Sources */,
@@ -289,6 +296,7 @@
 				2EC8B9982B6545C700C3F98B /* InstagramApp.swift in Sources */,
 				2EC8B9B82B65567D00C3F98B /* UserStatView.swift in Sources */,
 				2EC8B9B32B65487D00C3F98B /* MainTabView.swift in Sources */,
+				2ED853E42B8F4F2A00C5EECA /* LoginView.swift in Sources */,
 				2E95A4D72B669D6300B0E911 /* SearchView.swift in Sources */,
 				2E6AAAD32B69192000342215 /* NotificationView.swift in Sources */,
 			);
