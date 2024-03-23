@@ -25,18 +25,11 @@ struct LoginView: View {
                 //Textfields
                 TextField("Enter your email", text: $email)
                     .textInputAutocapitalization(.none)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .clipShape(RoundedRectangle(cornerRadius: 5))
-                    .padding(.horizontal, 24)
+                    .modifier(IGTextFieldModifier())
                 
                 SecureField("Enter your password", text: $password)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .clipShape(RoundedRectangle(cornerRadius: 5))
-                    .padding(.horizontal, 24)
+                    .modifier(IGTextFieldModifier())
+                    .padding(.top, 5)
                 
                 Button(action: {
                     print("Forget password")

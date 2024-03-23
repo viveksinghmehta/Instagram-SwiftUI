@@ -1,41 +1,32 @@
 //
-//  AddEmailView.swift
+//  CompleteSignUpView.swift
 //  Instagram
 //
-//  Created by Vivek Singh Mehta on 28/02/24.
+//  Created by Vivek Singh Mehta on 29/02/24.
 //
 
 import SwiftUI
 
-struct AddEmailView: View {
-    
-    @State private var email: String = ""
-    @Environment(\.dismiss) var dismiss
-    
+struct CompleteSignUpView: View {
     var body: some View {
         VStack(spacing: 12) {
-            Text("Add your email")
+            Spacer()
+            Text("Welcome to Instagram, viveksinghmehta")
                 .font(.title2)
                 .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 36)
                 .padding(.top)
             
-            Text("You'll use this email to sign in to your account")
+            Text("Click below to complete registration and start using Instagram")
                 .font(.footnote)
-                .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            //Textfields
-            TextField("Enter your email", text: $email)
-                .textInputAutocapitalization(.none)
-                .modifier(IGTextFieldModifier())
-                .padding(.top)
-            
-            NavigationLink {
-                CreateUserNameView()
-                    .navigationBarBackButtonHidden(true)
-            } label: {
-                Text("Next")
+            Button(action: {
+                print("Complete Sign up")
+            }) {
+                Text("Complete Sign Up")
                     .font(.subheadline)
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
@@ -49,7 +40,7 @@ struct AddEmailView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 Button(action: {
-                    dismiss()
+//                    dismiss()
                 }) {
                     Image(systemName: "chevron.backward")
                         .imageScale(.large)
@@ -61,5 +52,5 @@ struct AddEmailView: View {
 }
 
 #Preview {
-    AddEmailView()
+    CompleteSignUpView()
 }
