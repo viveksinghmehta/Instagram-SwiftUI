@@ -13,6 +13,8 @@
 		2E69A0C92B9067A300020037 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69A0C82B9067A300020037 /* CreatePasswordView.swift */; };
 		2E69A0CB2B90683800020037 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69A0CA2B90683800020037 /* CompleteSignUpView.swift */; };
 		2E6AAAD32B69192000342215 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6AAAD22B69192000342215 /* NotificationView.swift */; };
+		2E6DB9002BB012C70037A470 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB8FF2BB012C70037A470 /* CurrentUserProfileView.swift */; };
+		2E6DB9022BB09F510037A470 /* ProfileButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB9012BB09F510037A470 /* ProfileButtonModifier.swift */; };
 		2E95A4CF2B66189D00B0E911 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2E95A4CE2B66189D00B0E911 /* SDWebImageSwiftUI */; };
 		2E95A4D12B661A0B00B0E911 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95A4D02B661A0B00B0E911 /* ProfileImageView.swift */; };
 		2E95A4D32B66410A00B0E911 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95A4D22B66410A00B0E911 /* FeedView.swift */; };
@@ -38,6 +40,8 @@
 		2E69A0C82B9067A300020037 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		2E69A0CA2B90683800020037 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 		2E6AAAD22B69192000342215 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		2E6DB8FF2BB012C70037A470 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		2E6DB9012BB09F510037A470 /* ProfileButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonModifier.swift; sourceTree = "<group>"; };
 		2E95A4D02B661A0B00B0E911 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		2E95A4D22B66410A00B0E911 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		2E95A4D42B66411300B0E911 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				2EC8B9B42B654A0C00C3F98B /* ProfileView.swift */,
+				2E6DB8FF2BB012C70037A470 /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				2EC8B9B72B65567D00C3F98B /* UserStatView.swift */,
 				2E95A4D02B661A0B00B0E911 /* ProfileImageView.swift */,
 				2E69A0C42B9064B000020037 /* IGTextFieldModifier.swift */,
+				2E6DB9012BB09F510037A470 /* ProfileButtonModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			files = (
 				2E95A4D12B661A0B00B0E911 /* ProfileImageView.swift in Sources */,
 				2E69A0CB2B90683800020037 /* CompleteSignUpView.swift in Sources */,
+				2E6DB9022BB09F510037A470 /* ProfileButtonModifier.swift in Sources */,
 				2E69A0C92B9067A300020037 /* CreatePasswordView.swift in Sources */,
 				2E95A4D52B66411300B0E911 /* FeedCell.swift in Sources */,
 				2E69A0C72B9065B500020037 /* CreateUserNameView.swift in Sources */,
@@ -317,6 +324,7 @@
 				2ED853E42B8F4F2A00C5EECA /* LoginView.swift in Sources */,
 				2E34B8002B9AEFB20055B380 /* UserModel.swift in Sources */,
 				2E95A4D72B669D6300B0E911 /* SearchView.swift in Sources */,
+				2E6DB9002BB012C70037A470 /* CurrentUserProfileView.swift in Sources */,
 				2E69A0C52B9064B000020037 /* IGTextFieldModifier.swift in Sources */,
 				2E6AAAD32B69192000342215 /* NotificationView.swift in Sources */,
 			);

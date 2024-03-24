@@ -18,7 +18,7 @@ struct MainTabView: View {
                 .tabItem { Image(systemName: "plus.app") }
             NotificationView()
                 .tabItem { Image(systemName: "bell.fill") }
-            ProfileView()
+            CurrentUserProfileView()
                 .tabItem { Image(systemName: "person.crop.circle.fill") }
         }
         .tint(.black)

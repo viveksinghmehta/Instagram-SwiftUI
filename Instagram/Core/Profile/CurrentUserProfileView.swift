@@ -1,35 +1,29 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  Instagram
 //
-//  Created by Vivek Singh Mehta on 27/01/24.
+//  Created by Vivek Singh Mehta on 24/03/24.
 //
 
 import SwiftUI
-import SDWebImageSwiftUI
 
-struct ProfileView: View {
-    
+struct CurrentUserProfileView: View {
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1)
     ]
-    let user: UserModel
-    
     var body: some View {
+        NavigationStack {
             ScrollView {
                 // Custom Navigation View
-                ProfileTopNavigationView(user: user)
+                CurrentProfileTopNavigationView()
                 // Header
                 VStack {
                     // Pic and stats
                     HStack {
-                        WebImage(url: URL(string: user.profileImageURL ?? ""))
-                            .onSuccess()
+                        Image("red-dragon")
                             .resizable()
-                            .indicator(.activity)
-                            .transition(.fade(duration: 0.5))
                             .scaledToFit()
                             .frame(width: 100, height: 100)
                             .background(.black)
@@ -47,15 +41,14 @@ struct ProfileView: View {
                     
                     // Name and bio
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(user.fullName ?? "")
+                        Text("Mr. Red Dragon")
                             .font(.title3)
                             .fontWeight(.semibold)
                             .fontDesign(.rounded)
-                        Text(user.bio ?? "")
+                        Text("Fire breathing")
                             .font(.subheadline)
                             .fontWeight(.medium)
                             .fontDesign(.rounded)
-                            .multilineTextAlignment(.leading)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal)
@@ -88,63 +81,41 @@ struct ProfileView: View {
                     }
                 }
             }
+        }
     }
 }
 
 #Preview {
-    ProfileView(user: UserModel.Mock_Users[0])
+    CurrentUserProfileView()
 }
 
-struct ProfileTopNavigationView: View {
-    
-    @Environment(\ .dismiss) var dismiss
-    let user: UserModel
-    
+struct CurrentProfileTopNavigationView: View {
     var body: some View {
         HStack {
-            // Back Button
-            Button(action: {
-                dismiss()
-            }, label: {
-                Image(systemName: "chevron.backward")
-                    .resizable()
-                    .imageScale(.large)
-                    .scaledToFit()
-                    .frame(width: 20, height: 20)
+            Button(action: {}, label: {
+                HStack {
+                    Image(systemName: "lock")
+                    Text("mr.red.dragon")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .fontDesign(.rounded)
+                    Image(systemName: "chevron.down")
+                }
             })
-            
             Spacer()
-            
-            // Notification settings
-            HStack(spacing: 12) {
+            HStack(spacing: 8) {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "bell")
+                    Image(systemName: "plus.app")
                         .imageScale(.large)
+                        .bold()
                 })
-                
-                // Extra settings
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "ellipsis")
+                    Image(systemName: "line.3.horizontal")
                         .imageScale(.large)
                         .bold()
                 })
             }
         }
-        .overlay(content: {
-            HStack {
-                Text(user.userName)
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .fontDesign(.rounded)
-                if user.isVerified {
-                    Image(systemName: "checkmark.seal.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 18)
-                        .foregroundStyle(.blue)
-                }
-            }
-        })
         .tint(.primary)
         .padding(.horizontal)
     }
