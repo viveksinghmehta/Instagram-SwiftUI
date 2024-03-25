@@ -42,8 +42,8 @@ struct FeedView: View {
                 
                 // Posts
                 LazyVGrid(columns: gridItems, content: {
-                    ForEach(0 ... 100, id: \.self) { _ in
-                        FeedCell()
+                    ForEach(PostModel.MOCK_POSTS) { post in
+                        FeedCell(post: post)
                     }
                 })
             }

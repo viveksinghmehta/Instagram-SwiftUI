@@ -9,6 +9,9 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct FeedCell: View {
+    
+    let post: PostModel
+    
     var body: some View {
         VStack(spacing: 10) {
             
@@ -95,5 +98,5 @@ struct FeedCell: View {
 }
 
 #Preview {
-    FeedCell()
+    FeedCell(post: PostModel.MOCK_POSTS[3])
 }

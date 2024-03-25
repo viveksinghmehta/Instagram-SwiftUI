@@ -43,7 +43,7 @@ struct SearchView: View {
                 
                 ScrollView {
                     LazyVStack(alignment: .leading) {
-                        ForEach(UserModel.Mock_Users) { user in
+                        ForEach(UserModel.MOCK_USERS) { user in
                             NavigationLink(value: user) {
                                 HStack {
                                     WebImage(url: URL(string: user.profileImageURL ?? ""))

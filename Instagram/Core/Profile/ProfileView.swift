@@ -92,7 +92,7 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView(user: UserModel.Mock_Users[0])
+    ProfileView(user: UserModel.MOCK_USERS[0])
 }
 
 struct ProfileTopNavigationView: View {

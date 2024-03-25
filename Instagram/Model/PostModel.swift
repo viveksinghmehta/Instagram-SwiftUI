@@ -19,11 +19,11 @@ struct PostModel: Identifiable, Hashable, Codable {
 
 extension PostModel {
     static let MOCK_POSTS: [PostModel] = [
-        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 23, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.Mock_Users[3]),
-        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 53, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.Mock_Users[2]),
-        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 13, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.Mock_Users[1]),
-        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 23, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.Mock_Users[3]),
-        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 29, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.Mock_Users[0]),
-        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 234, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.Mock_Users[2])
+        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 23, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.MOCK_USERS[3]),
+        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 53, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.MOCK_USERS[2]),
+        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 13, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.MOCK_USERS[1]),
+        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 23, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.MOCK_USERS[3]),
+        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 29, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.MOCK_USERS[0]),
+        .init(id: UUID().uuidString, ownerUid: UUID().uuidString, caption: nil, likes: 234, imageUrl: ImageUrl.getRandomImage(), timeStamp: Date(), user: UserModel.MOCK_USERS[2])
     ]
 }

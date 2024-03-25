@@ -18,7 +18,7 @@ struct UserModel: Identifiable, Hashable, Codable {
 }
 
 extension UserModel {
-    static var Mock_Users: [UserModel] = [
+    static var MOCK_USERS: [UserModel] = [
         .init(id: UUID().uuidString, userName: "BatMan", profileImageURL: ImageUrl.getRandomAvatar(), fullName: "Bruce Wayne", bio: "I'm BatMan and i take care of Gautam City.\n I'm a DC Character", email: "batman@google.com", isVerified: true),
         .init(id: UUID().uuidString, userName: "Venom", profileImageURL: ImageUrl.getRandomAvatar(), fullName: "Eddy Broke", bio: "we are vemon", email: "vemon@google.com"),
         .init(id: UUID().uuidString, userName: "Iron Man", profileImageURL: ImageUrl.getRandomAvatar(), fullName: "Tony Stark", bio: "I'm Iron Man", email: "ironman@google.com"),
